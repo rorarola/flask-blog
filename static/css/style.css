@@ -6,6 +6,7 @@
 	--clr-main: 204 90% 80.4%;
 	--clr-black: 0 0% 13.7%;
 	--clr-light-gray: 240, 6%, 68%;
+	--clr-dark-gray: 233, 14%, 35%;
     
     /* font-sizes */
     --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
@@ -92,7 +93,7 @@ body {
 .ff-normal { font-family: var(--ff-normal); } 
 
 .text-black { color: hsl( var(--clr-black) );}
-
+.text-dark-gray { color: hsl(var(--clr-dark-gray)); }
 
 /* primary header */
 .logo {
@@ -192,6 +193,7 @@ body {
 
 nav {
   float: right;
+  transition: opacity .35s ease .75s;
 }
 
 nav ul {
@@ -209,25 +211,17 @@ nav li {
 	color: hsl(var(--clr-light-gray));
 }
 
+
+nav a {
+	display: block;
+	position: relative;
+	transition: color .35s ease;
+}
+
+
 nav a:hover {
-  color: hsl( var(--clr-black) );
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 0.5em;
-  background-color: #444;
-
-  position: absolute;
-  top: 1rem;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
+  	color: white;
+  	transition: color .35s ease;
 }
 
 

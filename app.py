@@ -7,6 +7,7 @@ from mdit_py_plugins.front_matter import front_matter_plugin
 from mdit_py_plugins.footnote import footnote_plugin
 from mdit_py_plugins.texmath import texmath_plugin
 from mdit_py_plugins.tasklists import tasklists_plugin
+import re
 
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
@@ -33,13 +34,28 @@ def get_posts():
 	posts = [p for p in posts if "tags" in p.meta.keys() and p.meta["tags"] and "ignore" not in p.meta["tags"]]
 	return posts
 
+def get_categories():
+	categories = set()
+	for p in flatpages:
+		if p.path.startswith('posts'):
+			print(p.path)
+			m = re.search('/[^/]+/', p.path)
+			if m:
+				m = m.group(0).strip('/')
+				categories.add(m)
+	return categories
+
 
 @app.route("/blog")
 def blog():
 	posts = get_posts()
 	posts.sort(key=lambda item:datetime.strptime(item['date'], "%B %d, %Y"), reverse=True)
-	print(posts)
 	return render_template("blog.html", posts=posts)
+
+@app.route("/category")
+def category():
+	categories = get_categories()
+	return render_template("category.html", categories=categories)
 
 @app.route("/blog/t/<tag>")
 def blog_tag(tag):
