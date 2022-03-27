@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="post-warp">
+   {% for post in posts %}
+   <article class="archive-item">
+      <a href="{{ url_for('blog_post', path=post.path)}}" class="archive-item-link text-black">
+         {{ post.title }}
+      </a>
+      <span class="archive-item-date text-light-gray">{{ post.date }}</span>
+
+   </article>
+   {% endfor %}
+</div>
+
+{% endblock content %}

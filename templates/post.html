@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="post-warp">
+	{% if post.image %}
+	<center><img src="/static/assets/blog-images/{{ post.image }}"/></center>
+	<br>    
+	{% endif %}
+
+	<header class="post-header">
+		<h1 class="post-title">{{ post.title }}</h1> 
+		<div class="decorative-line">
+			<div class="decorative-line-center">
+			</div>
+		</div>
+		<div class="date-and-author">{{ post.date }} <span class="divider">|</span> By Rémi</div>
+	</header>
+	<div class="post-content">
+		{{ post.body|markdown|safe }}
+	</div>
+	
+</div>
+
+    
+{% endblock content %}
