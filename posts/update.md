@@ -4,6 +4,6 @@ date: March 26, 2022
 image: 
 tags: other
 
-Navbar hower動畫 - 27.03.2022
+Navbar hover動畫 - 27.03.2022
 
 網站架設與部署 - 27.03.2022
