@@ -5,6 +5,8 @@ from datetime import datetime
 from markdown_it import MarkdownIt
 from mdit_py_plugins.front_matter import front_matter_plugin
 from mdit_py_plugins.footnote import footnote_plugin
+from mdit_py_plugins.texmath import texmath_plugin
+from mdit_py_plugins.tasklists import tasklists_plugin
 
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
@@ -17,9 +19,11 @@ app.config.from_object(__name__)
 flatpages = FlatPages(app)
 
 md = (
-	MarkdownIt()
+	MarkdownIt("commonmark", {"breaks": True})
 	.use(front_matter_plugin)
 	.use(footnote_plugin)
+	.use(texmath_plugin)
+	.use(tasklists_plugin)
 	.disable('image')
 	.enable('table')
 )
