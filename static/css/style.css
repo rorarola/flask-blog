@@ -25,9 +25,7 @@
 
 /* Reset margins */
 
-body, h1, h2, h3, h4, h5, p, figure, picture {
-	margin: 0;
-}
+
 
 h1 {
 	font-weight: bold;
@@ -260,12 +258,13 @@ nav a:hover::before {
 }
 
 /* post */
-.post-warp  a:hover {
+.post-warp  a:hover{
 	color: #2d96bd;
 	background-color: transparent;
 	text-decoration: none;
 	transition: color .2s ease,border-color .2s ease,background .2s ease,opacity .2s ease;
 }
+
 
 .post-header {
 	margin-bottom: 60px;
@@ -310,4 +309,18 @@ nav a:hover::before {
 	font-style: normal;
 	line-height: 24px;
 	margin-bottom: 28px;
+}
+
+.post-content {
+	line-height: 1.5;
+}
+
+.post-content a {
+	color: hsl(208, 56%, 46%);
+	text-decoration: none;
+}
+
+.post-content a:hover {
+	color: #23527c;
+	text-decoration: underline;
 }
