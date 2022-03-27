@@ -9,6 +9,7 @@ flask-flatpages = "*"
 markdown = "*"
 markdown-it-py = "*"
 mdit-py-plugins = "*"
+gunicorn = "*"
 
 [dev-packages]
 
