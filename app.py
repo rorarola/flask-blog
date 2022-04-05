@@ -68,6 +68,10 @@ def blog_tag(tag):
 def blog_post(path):
 	post = flatpages.get_or_404(path)
 	return render_template('post.html', post=post)
+	
+@app.route("/about")
+def about():
+	return render_template('about.html')
 
 @app.template_filter('markdown')
 def reverse_filter(s):
