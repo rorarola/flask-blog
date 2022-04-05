@@ -262,7 +262,7 @@ nav {
 
 @media (min-width: 768px) {
 	.nav-link:hover {
-		color: white;
+		/* color: white; */
 		transition: color .35s ease;
 	}
 
@@ -277,12 +277,12 @@ nav {
 	}
 
 	.nav-link:before {
-	background-color: #f25757;
+	background-color: hsl( var(--clr-dark-brown) );
 	transition: all .25s cubic-bezier(.694,.048,.335,1) .15s;
 	}
 
 	.nav-link:after {
-	background-color: #235aa6;
+	background-color: hsl( var(--clr-brown) );
 	transition: all .25s cubic-bezier(.694,.048,.335,1);
 	}
 	.nav-link:hover:before, .nav-link:hover:after {
