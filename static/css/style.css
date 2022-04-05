@@ -84,13 +84,6 @@ body {
 	margin: 0 auto;
 }
 
-p {
-	font-family: inherit;
-	font-size: var(--fs-700);
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-
 .uppercase {
 	text-transform: uppercase;
 }
@@ -394,6 +387,13 @@ nav {
 		about page
 		============	*/
 
+.about p {
+	font-family: inherit;
+	font-size: var(--fs-700);
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
 .row {
 	flex-wrap: wrap;
 }
@@ -410,8 +410,6 @@ nav {
 	flex: 1 1 62%;
 
 }
-
-
 
 .avator-img {
   width:270px;
