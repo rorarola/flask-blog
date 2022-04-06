@@ -12,7 +12,6 @@ tags: flask, css, javascript, blog
 ### 功能
 
 將markdown文章放到posts資料夾裡，文章就可以顯示到頁面上。
-
 markdown文件使用[marktext](https://github.com/marktext/marktext#download-and-installation)編輯，因為Typora現在似乎要付費。
 
 ### 使用技術
@@ -63,3 +62,12 @@ markdown文件使用[marktext](https://github.com/marktext/marktext#download-and
 ### Github連結
 
 [https://github.com/rorarola/flask-blog](https://github.com/rorarola/flask-blog)
+
+
+```cpp=
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+
+}
+```

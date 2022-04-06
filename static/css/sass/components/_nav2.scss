@@ -1,0 +1,113 @@
+.navbar-toggle {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.navbar-toggle {
+		display: block;
+		position: fixed;
+		top: 28px;
+		right: 28px;
+		margin-left: -10px;
+		text-align: center;
+		font-size: 0px;
+		z-index: 9999;
+		color: inherit !important;
+		height: 45px;
+		width: 45px;
+		cursor: pointer;
+		z-index: 1000;
+		// pointer-events: none;
+		-webkit-transition: -webkit-transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+		-moz-transition: -moz-transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+		transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+		background: white;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+		border-bottom-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+	}
+}
+
+
+
+
+.navbar-toggle .icon {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	-webkit-transform: translate(50%, -50%);
+	-moz-transform: translate(50%, -50%);
+	-ms-transform: translate(50%, -50%);
+	-o-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+	-webkit-transition: -webkit-transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+	-moz-transition: -moz-transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+	transition: transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+}
+
+@media (max-width: 768px) {
+	.navbar-toggle[aria-expanded="true"] .icon {
+		-webkit-transform: translate(50%, -1px);
+		-moz-transform: translate(50%, -1px);
+		-ms-transform: translate(50%, -1px);
+		-o-transform: translate(50%, -1px);
+		transform: translate(50%, -1px);
+	}
+}
+
+.navbar-toggle .line {
+	float: right;
+	clear: right;
+	height: 2px;
+	background: #1c1b20;
+	-webkit-transition: -webkit-transform 800ms cubic-bezier(0.7, 0, 0.3, 1) 0ms, background 150ms linear 0ms;
+	-moz-transition: -moz-transform 800ms cubic-bezier(0.7, 0, 0.3, 1) 0ms, background 150ms linear 0ms;
+	transition: transform 800ms cubic-bezier(0.7, 0, 0.3, 1) 0ms, background 150ms linear 0ms;
+	-webkit-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+	-moz-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+	transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
+}
+
+.navbar-toggle .line:nth-child(1) {
+	width: 16px;
+}
+
+.navbar-toggle[aria-expanded="true"] .line:nth-child(1) {
+	width: 20px !important;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.navbar-toggle .line:nth-child(2) {
+	width: 20px;
+}
+
+.navbar-toggle[aria-expanded="true"] .line:nth-child(2) {
+	width: 20px !important;
+	margin-top: -2px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.navbar-toggle .line:nth-child(3) {
+	width: 12px;
+}
+
+.navbar-toggle[aria-expanded="true"] .line:nth-child(3) {
+	width: 0px;
+}
+
+.navbar-toggle .line+.line {
+	margin-top: 2px;
+}
+
+.navbar-toggle[aria-expanded="true"] .txt {
+	opacity: 0;
+}
