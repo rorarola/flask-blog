@@ -2,7 +2,7 @@ title: 迎新心得文
 subtitle:
 date: April 6, 2022
 image: 
-tags:
+tags: opinion
 
 因為去年沒寫，所以順便寫一下
 
