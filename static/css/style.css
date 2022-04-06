@@ -61,6 +61,18 @@ body {
 		general 
 		======= */
 
+a,
+area,
+button,
+[role=button],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
 .flex {
 	display: flex;
 	gap: var(--gap, 1rem);
