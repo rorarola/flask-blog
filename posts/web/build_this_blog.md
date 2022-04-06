@@ -62,12 +62,3 @@ markdown文件使用[marktext](https://github.com/marktext/marktext#download-and
 ### Github連結
 
 [https://github.com/rorarola/flask-blog](https://github.com/rorarola/flask-blog)
-
-
-```cpp=
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-
-}
-```

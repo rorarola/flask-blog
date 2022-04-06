@@ -12,8 +12,8 @@
 current_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
 # git pull
-# git pull origin "$current_branch"
-# echo "====pull changes from '$current_branch' branch"
+git pull origin "$current_branch"
+echo "====pull changes from '$current_branch' branch"
 
 # get the argument message
 message="$1"
