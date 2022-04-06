@@ -48,6 +48,10 @@ markdown文件使用[marktext](https://github.com/marktext/marktext#download-and
   git push heroku main
   ```
 
+- sass
+  參考了Keven Powell的[模板](https://github.com/kevin-powell/demo-starter-template-with-sass/tree/de6f78e68ff1fd17899b91a4c8e148cd5ad06f9f)。
+  這讓我的css架構更容易整理。
+
 ### 參考來源
 
 - 整體架構 [Building A Lightweight Blogging CMS In 10 Lines of Code](https://www.oneword.domains/blog/lightweight-cms)

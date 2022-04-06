@@ -12,4 +12,8 @@ window.onload = function(){
 			navToggle.setAttribute('aria-expanded', false);
 		}
 	});
+
+	document.addEventListener('dblclick', function(event) {
+		event.preventDefault();
+	}, { passive: false });
 }
