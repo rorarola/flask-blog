@@ -61,15 +61,7 @@ body {
 		general 
 		======= */
 
-a,
-area,
-button,
-[role=button],
-input,
-label,
-select,
-summary,
-textarea {
+* {	/* no double tap */
   touch-action: manipulation;
 }
 
