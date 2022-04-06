@@ -39,6 +39,13 @@
 
 
 @media (max-width: 768px) {
+  .primary-header {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: hsl(var(--clr-primary-300));
+    z-index: 999;
+  }
   .primary-navigation {
     --gap: 2em;
     position: fixed;
