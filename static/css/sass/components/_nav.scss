@@ -7,7 +7,7 @@
 .primary-header {
   align-items: center;
   justify-content: space-between;
-  height: 104px;
+  height: var(--header-height);
 }
 
 .primary-navigation {

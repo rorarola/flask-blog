@@ -35,6 +35,6 @@ git push origin "$current_branch"
 echo "====pushed changes to '$current_branch' branch"
 
 
-git remote add origin https://github.com/rorarola/flask-blog.git
-git push -u origin main
+# git remote add origin https://github.com/rorarola/flask-blog.git
+# git push -u origin main
 git push heroku main

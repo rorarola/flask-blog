@@ -1,7 +1,8 @@
 .container {
   max-width: 62.5rem;
 	width: 80%;
-	margin: 104px auto;
+	margin: var(--header-height) 0 auto;
+  height: 100%;
   // not sure if it is neccessary
   padding-top: 50px;
   // padding-inline: 2em;

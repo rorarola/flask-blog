@@ -6,6 +6,18 @@
   body {
     font-size: clamp(.5rem, 2.5vmin, 1.5rem);
   }
+
+
+  #game {
+      display: flex;
+      height: calc(100% - var(--header-height));
+    display: flex;
+    flex-direction: column;
+  }
+
+  .board-container {
+      flex-grow: 1
+  }
   
   .keyboard {
     display: grid;
@@ -70,8 +82,8 @@
     justify-content: center;
     align-content: center;
     flex-grow: 1;
-    grid-template-columns: repeat(5, 4em);
-    grid-template-rows: repeat(6, 4em);
+    grid-template-columns: repeat(5, 62px);
+    grid-template-rows: repeat(6, 62px);
     gap: .25em;
     margin-bottom: 1em;
   }

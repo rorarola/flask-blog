@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 :root {
+  --header-height: 104px;
   --section-spacing: 3.5rem;
   @include mq(medium) {
     --section-spacing: 7rem;
