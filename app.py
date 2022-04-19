@@ -68,6 +68,10 @@ def blog_tag(tag):
 def blog_post(path):
 	post = flatpages.get_or_404(path)
 	return render_template('post.html', post=post)
+
+@app.route("/1922")
+def covid():
+	return render_template('1922.html')
 	
 @app.route("/about")
 def about():
