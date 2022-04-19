@@ -1,11 +1,19 @@
 .container {
   max-width: 62.5rem;
 	width: 80%;
-	margin: var(--header-height) 0 auto;
-  height: 100%;
+	margin: 0 auto;
+  position: relative;
+  
+  height: calc(100% - var(--header-height));
   // not sure if it is neccessary
-  padding-top: 50px;
+  padding-top: 4em;
   // padding-inline: 2em;
 	margin-inline: auto;
 	max-width: 80rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    top: var(--header-height);
+  }
 }

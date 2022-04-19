@@ -19,6 +19,8 @@
 //   margin: 0;
 // }
 
+
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -35,7 +37,7 @@ html {
 
 /* Set core body defaults */
 body {
-  height: calc(100% - var(--header-height));
+  height: 100%;
   margin: 0;
   text-rendering: optimizeSpeed;
   line-height: 1.5;

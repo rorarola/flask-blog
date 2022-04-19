@@ -10,7 +10,8 @@
 
   #game {
       display: flex;
-      height: calc(100% - var(--header-height));
+      height: 100%;
+      padding-bottom: 1em;
     display: flex;
     flex-direction: column;
   }
@@ -189,7 +190,7 @@
     top: 10vh;
     left: 50vw;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
