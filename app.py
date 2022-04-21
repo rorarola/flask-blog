@@ -8,6 +8,7 @@ from mdit_py_plugins.footnote import footnote_plugin
 from mdit_py_plugins.texmath import texmath_plugin
 from mdit_py_plugins.tasklists import tasklists_plugin
 import re
+from covid import get_covid_info
 
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
@@ -71,7 +72,8 @@ def blog_post(path):
 
 @app.route("/1922")
 def covid():
-	return render_template('1922.html')
+	covid_info = get_covid_info()
+	return render_template('1922.html', update_date=covid_info["date"], covid_case=covid_info["case"])
 	
 @app.route("/about")
 def about():
