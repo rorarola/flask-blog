@@ -3,7 +3,7 @@ subtitle:
 date: March 26, 2022
 image: 
 tags: other
-新增cordle 參考[WebDevSimplified](https://github.com/WebDevSimplified/wordle-clone) - 22.04.2022
+新增cordle(參考[WebDevSimplified](https://github.com/WebDevSimplified/wordle-clone)) - 22.04.2022
 css改成sass架構 - 06.04.2022
 個人介紹頁面動工 & 色調調整 - 05.04.2022
 Navbar hover動畫 - 27.03.2022
