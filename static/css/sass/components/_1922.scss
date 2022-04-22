@@ -9,7 +9,8 @@
 }
 
 .board-container {
-  flex-grow: 1
+  flex-grow: 1;
+  pointer-events: none;
 }
 
 .keyboard {
@@ -18,6 +19,10 @@
   grid-auto-rows: 3em;
   gap: .25em;
   justify-content: center;
+}
+
+svg {
+  pointer-events: none;
 }
 
 .key {

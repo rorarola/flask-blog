@@ -29,6 +29,7 @@ function stopInteraction() {
 }
   
 function handleMouseClick(e) {
+	console.log(e);
 	if (e.target.matches("[data-key]")) {
 		pressKey(e.target.dataset.key)
 		return
@@ -52,6 +53,7 @@ function handleKeyPress(e) {
 	}
 
 	if (e.key === "Backspace" || e.key === "Delete") {
+		console.log("deleting")
 		deleteKey()
 		return
 	}
